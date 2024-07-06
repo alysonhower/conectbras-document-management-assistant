@@ -1,0 +1,28 @@
+[package]
+name = "conectbras-document-management-assistant-backend"
+version = "0.0.0"
+description = ""
+authors = ["Alysonhower Veras Vieira <contato@alysonhower.dev>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "conectbras_document_management_assistant_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.0-beta", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0-beta", features = [] }
+tauri-plugin-shell = "2.0.0-beta"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri-plugin-dialog = "2.0.0-beta.10"
+lopdf = "0.32.0"
+anyhow = "1.0.86"
+log = "0.4.22"
+tauri-plugin-log = "2.0.0-beta.7"
+thiserror = "1.0.61"
+
